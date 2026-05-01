@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Wf1RsEBuEfGcSNjp4WdsAw" name="Design">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_Wgh1QEBuEfGcSNjp4WdsAw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_hfSJEERkEfGC-47AcKBwNA" name="uml_templates">
+    <packagedElement xmi:type="uml:Interface" xmi:id="_X9lpIEBuEfGcSNjp4WdsAw" name="Interface2"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_pffg4ERkEfGC-47AcKBwNA" name="Class2">
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_r3f6EERkEfGC-47AcKBwNA" client="_pffg4ERkEfGC-47AcKBwNA" supplier="_X9lpIEBuEfGcSNjp4WdsAw" contract="_X9lpIEBuEfGcSNjp4WdsAw"/>
+      <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_4CApsEUVEfGC-47AcKBwNA" name="StateMachine2">
+        <region xmi:type="uml:Region" xmi:id="_5V8WwEUVEfGC-47AcKBwNA" name="Region1">
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_6U4EMEUVEfGC-47AcKBwNA" name="Fork1" kind="fork"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_6yoXMEUVEfGC-47AcKBwNA" name="Join2" kind="join"/>
+        </region>
+      </ownedBehavior>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_t_ux4ERkEfGC-47AcKBwNA" name="Class3"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_vuNF4ERkEfGC-47AcKBwNA" client="_pffg4ERkEfGC-47AcKBwNA" supplier="_t_ux4ERkEfGC-47AcKBwNA"/>
+  </packagedElement>
+</uml:Model>

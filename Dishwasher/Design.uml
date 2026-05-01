@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks">
+  <uml:Model xmi:id="_gA9joEF0EfGKaZI4lXWYhw" name="Design">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_gD0qb0F0EfGKaZI4lXWYhw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_gELPsEF0EfGKaZI4lXWYhw">
+      <importedPackage xmi:type="uml:Package" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="__LNqoERdEfGC-47AcKBwNA" name="base">
+      <packagedElement xmi:type="uml:Class" xmi:id="_8ZyZ8ERfEfGC-47AcKBwNA" name="StateMachine"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_MT0h0ERtEfGC-47AcKBwNA" name="BaseStmTop"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_FeLdgEReEfGC-47AcKBwNA" name="interfaces">
+      <packagedElement xmi:type="uml:Interface" xmi:id="_h7TI8ERfEfGC-47AcKBwNA" name="IStateMachineHost"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_stmOUEF0EfGKaZI4lXWYhw" name="model">
+      <packagedElement xmi:type="uml:Class" xmi:id="_29Wm4EF0EfGKaZI4lXWYhw" name="Dishwasher">
+        <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_eqAoQERoEfGC-47AcKBwNA" client="_29Wm4EF0EfGKaZI4lXWYhw" supplier="_h7TI8ERfEfGC-47AcKBwNA" contract="_h7TI8ERfEfGC-47AcKBwNA"/>
+        <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_D5KWAEF1EfGKaZI4lXWYhw" name="MainStm">
+          <region xmi:type="uml:Region" xmi:id="_LisTMEF1EfGKaZI4lXWYhw" name="Region1">
+            <transition xmi:type="uml:Transition" xmi:id="_Ui028EF1EfGKaZI4lXWYhw" source="_R14vkEF1EfGKaZI4lXWYhw" target="_PIeHEEF1EfGKaZI4lXWYhw"/>
+            <subvertex xmi:type="uml:State" xmi:id="_PIeHEEF1EfGKaZI4lXWYhw" name="Active">
+              <region xmi:type="uml:Region" xmi:id="_WNQYcEF1EfGKaZI4lXWYhw" name="running">
+                <transition xmi:type="uml:Transition" xmi:id="_XFxfYEF2EfGKaZI4lXWYhw" source="_SI-OMEF2EfGKaZI4lXWYhw" target="_dEnR0EF1EfGKaZI4lXWYhw"/>
+                <transition xmi:type="uml:Transition" xmi:id="_xJVH4EF2EfGKaZI4lXWYhw" source="_dEnR0EF1EfGKaZI4lXWYhw" target="_n7AMlEF1EfGKaZI4lXWYhw">
+                  <trigger xmi:type="uml:Trigger" xmi:id="_7p15QEF2EfGKaZI4lXWYhw" event="_6sijgEF2EfGKaZI4lXWYhw"/>
+                </transition>
+                <transition xmi:type="uml:Transition" xmi:id="_dMwPQEF3EfGKaZI4lXWYhw" source="_jz50UEF1EfGKaZI4lXWYhw" target="_gYCKYEF1EfGKaZI4lXWYhw">
+                  <trigger xmi:type="uml:Trigger" xmi:id="_iBqIsEF3EfGKaZI4lXWYhw" event="_hwijgEF3EfGKaZI4lXWYhw"/>
+                </transition>
+                <transition xmi:type="uml:Transition" xmi:id="_m4ps0EF3EfGKaZI4lXWYhw" source="_gYCKYEF1EfGKaZI4lXWYhw" target="_Z7cE8EF2EfGKaZI4lXWYhw">
+                  <trigger xmi:type="uml:Trigger" xmi:id="_q7P_kEF3EfGKaZI4lXWYhw" event="_qz4MQEF3EfGKaZI4lXWYhw"/>
+                </transition>
+                <transition xmi:type="uml:Transition" xmi:id="_QHlikEUWEfGC-47AcKBwNA" source="_jz50UEF1EfGKaZI4lXWYhw" target="_OkTx8EUWEfGC-47AcKBwNA"/>
+                <transition xmi:type="uml:Transition" xmi:id="_XMyqsEUWEfGC-47AcKBwNA" source="_OkTx8EUWEfGC-47AcKBwNA" target="_dEnR0EF1EfGKaZI4lXWYhw"/>
+                <subvertex xmi:type="uml:State" xmi:id="_dEnR0EF1EfGKaZI4lXWYhw" name="off"/>
+                <subvertex xmi:type="uml:State" xmi:id="_gYCKYEF1EfGKaZI4lXWYhw" name="open"/>
+                <subvertex xmi:type="uml:State" xmi:id="_jz50UEF1EfGKaZI4lXWYhw" name="on">
+                  <entry xmi:type="uml:OpaqueBehavior" xmi:id="_e_ksgEKPEfGKaZI4lXWYhw" name="Motor_on()">
+                    <language>JAVA</language>
+                    <body>System.out.println(&quot;Motor_on()&quot;);</body>
+                  </entry>
+                  <exit xmi:type="uml:OpaqueBehavior" xmi:id="_qJkfwEKPEfGKaZI4lXWYhw" name="Motor_off()">
+                    <language>JAVA</language>
+                    <body>System.out.println(&quot;Motor_off()&quot;);</body>
+                  </exit>
+                  <region xmi:type="uml:Region" xmi:id="_n6_lgEF1EfGKaZI4lXWYhw" name="Region1">
+                    <transition xmi:type="uml:Transition" xmi:id="_iI7q0EF2EfGKaZI4lXWYhw" source="_dN0bsEF2EfGKaZI4lXWYhw" target="_Z7cE8EF2EfGKaZI4lXWYhw"/>
+                    <transition xmi:type="uml:Transition" xmi:id="_w6dwAEF3EfGKaZI4lXWYhw" source="_n7AMlEF1EfGKaZI4lXWYhw" target="_qXFNcEF1EfGKaZI4lXWYhw">
+                      <trigger xmi:type="uml:Trigger" xmi:id="_0_JtcEF3EfGKaZI4lXWYhw" event="_00t_EEF3EfGKaZI4lXWYhw"/>
+                    </transition>
+                    <transition xmi:type="uml:Transition" xmi:id="_1_M1MEF3EfGKaZI4lXWYhw" source="_qXFNcEF1EfGKaZI4lXWYhw" target="_svnLEEF1EfGKaZI4lXWYhw">
+                      <trigger xmi:type="uml:Trigger" xmi:id="_4cW0IEF3EfGKaZI4lXWYhw" event="_00t_EEF3EfGKaZI4lXWYhw"/>
+                    </transition>
+                    <transition xmi:type="uml:Transition" xmi:id="_7pAWUEF3EfGKaZI4lXWYhw" source="_svnLEEF1EfGKaZI4lXWYhw" target="_dEnR0EF1EfGKaZI4lXWYhw">
+                      <trigger xmi:type="uml:Trigger" xmi:id="_C_Nu4EF4EfGKaZI4lXWYhw" event="_00t_EEF3EfGKaZI4lXWYhw"/>
+                    </transition>
+                    <subvertex xmi:type="uml:State" xmi:id="_n7AMlEF1EfGKaZI4lXWYhw" name="washing"/>
+                    <subvertex xmi:type="uml:State" xmi:id="_qXFNcEF1EfGKaZI4lXWYhw" name="rinsing"/>
+                    <subvertex xmi:type="uml:State" xmi:id="_svnLEEF1EfGKaZI4lXWYhw" name="drying"/>
+                    <subvertex xmi:type="uml:Pseudostate" xmi:id="_Z7cE8EF2EfGKaZI4lXWYhw" name="on_hist" kind="shallowHistory"/>
+                    <subvertex xmi:type="uml:Pseudostate" xmi:id="_dN0bsEF2EfGKaZI4lXWYhw" name="on_init"/>
+                  </region>
+                </subvertex>
+                <subvertex xmi:type="uml:Pseudostate" xmi:id="_SI-OMEF2EfGKaZI4lXWYhw" name="running_init"/>
+              </region>
+              <region xmi:type="uml:Region" xmi:id="_XSqhUEF1EfGKaZI4lXWYhw" name="service">
+                <transition xmi:type="uml:Transition" xmi:id="_tvv88EF2EfGKaZI4lXWYhw" source="_lcGrwEF2EfGKaZI4lXWYhw" target="_0fV24EF1EfGKaZI4lXWYhw"/>
+                <transition xmi:type="uml:Transition" xmi:id="_ostkEEF6EfGKaZI4lXWYhw" source="_0fV24EF1EfGKaZI4lXWYhw" target="_8ygm8EF1EfGKaZI4lXWYhw">
+                  <trigger xmi:type="uml:Trigger" xmi:id="_uqGIgEF6EfGKaZI4lXWYhw" event="_uebEAEF6EfGKaZI4lXWYhw"/>
+                </transition>
+                <transition xmi:type="uml:Transition" xmi:id="_qBWbwEF6EfGKaZI4lXWYhw" source="_8ygm8EF1EfGKaZI4lXWYhw" target="_0fV24EF1EfGKaZI4lXWYhw">
+                  <trigger xmi:type="uml:Trigger" xmi:id="_zJV7AEF6EfGKaZI4lXWYhw" event="_y_O8wEF6EfGKaZI4lXWYhw"/>
+                </transition>
+                <transition xmi:type="uml:Transition" xmi:id="_UkjdIEUWEfGC-47AcKBwNA" source="_8ygm8EF1EfGKaZI4lXWYhw" target="_OkTx8EUWEfGC-47AcKBwNA"/>
+                <subvertex xmi:type="uml:State" xmi:id="_0fV24EF1EfGKaZI4lXWYhw" name="normal"/>
+                <subvertex xmi:type="uml:State" xmi:id="_8ygm8EF1EfGKaZI4lXWYhw" name="faulty"/>
+                <subvertex xmi:type="uml:Pseudostate" xmi:id="_lcGrwEF2EfGKaZI4lXWYhw" name="service_init"/>
+                <subvertex xmi:type="uml:Pseudostate" xmi:id="_OkTx8EUWEfGC-47AcKBwNA" kind="join"/>
+              </region>
+              <region xmi:type="uml:Region" xmi:id="_X04dkEF1EfGKaZI4lXWYhw" name="mode">
+                <transition xmi:type="uml:Transition" xmi:id="_uW3AQEF2EfGKaZI4lXWYhw" source="_rIiqIEF2EfGKaZI4lXWYhw" target="_Igq3MEF2EfGKaZI4lXWYhw"/>
+                <transition xmi:type="uml:Transition" xmi:id="_1BDqkEF6EfGKaZI4lXWYhw" source="_Igq3MEF2EfGKaZI4lXWYhw" target="_Lm8roEF2EfGKaZI4lXWYhw">
+                  <trigger xmi:type="uml:Trigger" xmi:id="_5MJK8EF6EfGKaZI4lXWYhw" event="_49TdsEF6EfGKaZI4lXWYhw"/>
+                </transition>
+                <transition xmi:type="uml:Transition" xmi:id="_6nqGsEF6EfGKaZI4lXWYhw" source="_Lm8roEF2EfGKaZI4lXWYhw" target="_Igq3MEF2EfGKaZI4lXWYhw">
+                  <trigger xmi:type="uml:Trigger" xmi:id="_86JtwEF6EfGKaZI4lXWYhw" event="_49TdsEF6EfGKaZI4lXWYhw"/>
+                </transition>
+                <subvertex xmi:type="uml:State" xmi:id="_Igq3MEF2EfGKaZI4lXWYhw" name="quick"/>
+                <subvertex xmi:type="uml:State" xmi:id="_Lm8roEF2EfGKaZI4lXWYhw" name="intensive"/>
+                <subvertex xmi:type="uml:Pseudostate" xmi:id="_rIiqIEF2EfGKaZI4lXWYhw" name="mode_init"/>
+              </region>
+            </subvertex>
+            <subvertex xmi:type="uml:Pseudostate" xmi:id="_R14vkEF1EfGKaZI4lXWYhw" name="MainStmInit"/>
+          </region>
+        </ownedBehavior>
+      </packagedElement>
+      <packagedElement xmi:type="uml:CallEvent" xmi:id="_6sijgEF2EfGKaZI4lXWYhw" name="evStart"/>
+      <packagedElement xmi:type="uml:CallEvent" xmi:id="_hwijgEF3EfGKaZI4lXWYhw" name="evOpen"/>
+      <packagedElement xmi:type="uml:CallEvent" xmi:id="_qz4MQEF3EfGKaZI4lXWYhw" name="evClose"/>
+      <packagedElement xmi:type="uml:CallEvent" xmi:id="_00t_EEF3EfGKaZI4lXWYhw" name="evCompleted"/>
+      <packagedElement xmi:type="uml:CallEvent" xmi:id="_uebEAEF6EfGKaZI4lXWYhw" name="evNeedService"/>
+      <packagedElement xmi:type="uml:CallEvent" xmi:id="_y_O8wEF6EfGKaZI4lXWYhw" name="evRecovered"/>
+      <packagedElement xmi:type="uml:CallEvent" xmi:id="_49TdsEF6EfGKaZI4lXWYhw" name="evMode"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_NuSAkERgEfGC-47AcKBwNA" client="_29Wm4EF0EfGKaZI4lXWYhw" supplier="_8ZyZ8ERfEfGC-47AcKBwNA"/>
+      <packagedElement xmi:type="uml:CallEvent" xmi:id="_ud6LUEUXEfGC-47AcKBwNA" name="evMonTimer"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_gB0fQEF0EfGKaZI4lXWYhw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gB_eYEF0EfGKaZI4lXWYhw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_gDf6QEF0EfGKaZI4lXWYhw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gDf6QUF0EfGKaZI4lXWYhw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//activities"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Activities"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_gDy1MEF0EfGKaZI4lXWYhw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gD0qYEF0EfGKaZI4lXWYhw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//allocations"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Allocations"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_gD0qYUF0EfGKaZI4lXWYhw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gD0qYkF0EfGKaZI4lXWYhw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_gD0qY0F0EfGKaZI4lXWYhw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gD0qZEF0EfGKaZI4lXWYhw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//constraintblocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ConstraintBlocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_gD0qZUF0EfGKaZI4lXWYhw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gD0qZkF0EfGKaZI4lXWYhw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//deprecatedelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_DeprecatedElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_gD0qZ0F0EfGKaZI4lXWYhw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gD0qaEF0EfGKaZI4lXWYhw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_gD0qaUF0EfGKaZI4lXWYhw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gD0qakF0EfGKaZI4lXWYhw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_gD0qa0F0EfGKaZI4lXWYhw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gD0qbEF0EfGKaZI4lXWYhw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_gD0qbUF0EfGKaZI4lXWYhw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gD0qbkF0EfGKaZI4lXWYhw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <Blocks:Block xmi:id="_2-kH0EF0EfGKaZI4lXWYhw" base_Class="_29Wm4EF0EfGKaZI4lXWYhw"/>
+  <Blocks:Block xmi:id="_8Z4gkERfEfGC-47AcKBwNA" base_Class="_8ZyZ8ERfEfGC-47AcKBwNA"/>
+  <Blocks:Block xmi:id="_MT2XAERtEfGC-47AcKBwNA" base_Class="_MT0h0ERtEfGC-47AcKBwNA"/>
+</xmi:XMI>
