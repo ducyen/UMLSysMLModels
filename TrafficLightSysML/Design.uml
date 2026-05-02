@@ -60,20 +60,26 @@
           </region>
           <region xmi:type="uml:Region" xmi:id="_Y7zS8EVSEfGC-47AcKBwNA" name="Region2_SideRoad">
             <transition xmi:type="uml:Transition" xmi:id="_p8p1wEVbEfGC-47AcKBwNA" source="_IOp8AEVZEfGC-47AcKBwNA" target="_yEAM0EVaEfGC-47AcKBwNA"/>
-            <transition xmi:type="uml:Transition" xmi:id="__HXDgEVcEfGC-47AcKBwNA" source="_IOp8AEVZEfGC-47AcKBwNA" target="_Pf24wEVZEfGC-47AcKBwNA"/>
-            <transition xmi:type="uml:Transition" xmi:id="_AEZTgEVdEfGC-47AcKBwNA" source="_Pf24wEVZEfGC-47AcKBwNA" target="_S48UcEVZEfGC-47AcKBwNA"/>
+            <transition xmi:type="uml:Transition" xmi:id="__HXDgEVcEfGC-47AcKBwNA" source="_IOp8AEVZEfGC-47AcKBwNA" target="_Pf24wEVZEfGC-47AcKBwNA">
+              <trigger xmi:type="uml:Trigger" xmi:id="_8s7yAEVoEfGC-47AcKBwNA" event="_8YZscEVoEfGC-47AcKBwNA"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_AEZTgEVdEfGC-47AcKBwNA" source="_Pf24wEVZEfGC-47AcKBwNA" target="_S48UcEVZEfGC-47AcKBwNA">
+              <trigger xmi:type="uml:Trigger" xmi:id="_rX9_YEVqEfGwovqFqXZF_g" event="_rMM0QEVqEfGwovqFqXZF_g"/>
+            </transition>
             <transition xmi:type="uml:Transition" xmi:id="_eSoMsEVdEfGC-47AcKBwNA" source="_FL_cQEVZEfGC-47AcKBwNA" target="_kzHbAEVZEfGC-47AcKBwNA"/>
             <subvertex xmi:type="uml:Pseudostate" xmi:id="_FL_cQEVZEfGC-47AcKBwNA" name="Initial1"/>
             <subvertex xmi:type="uml:State" xmi:id="_IOp8AEVZEfGC-47AcKBwNA" name="SideGreen"/>
             <subvertex xmi:type="uml:State" xmi:id="_Pf24wEVZEfGC-47AcKBwNA" name="SideYellow"/>
             <subvertex xmi:type="uml:State" xmi:id="_S48UcEVZEfGC-47AcKBwNA" name="SideRed">
               <region xmi:type="uml:Region" xmi:id="_X4CrskVZEfGC-47AcKBwNA" name="Region1">
-                <transition xmi:type="uml:Transition" xmi:id="_SgD9kEVdEfGC-47AcKBwNA" source="_X4CruUVZEfGC-47AcKBwNA" target="_ORaL0EVdEfGC-47AcKBwNA"/>
+                <transition xmi:type="uml:Transition" xmi:id="_SgD9kEVdEfGC-47AcKBwNA" source="_X4CruUVZEfGC-47AcKBwNA" target="_ORaL0EVdEfGC-47AcKBwNA">
+                  <trigger xmi:type="uml:Trigger" xmi:id="_RiMewEVrEfGwovqFqXZF_g" event="_Q0MJQEVrEfGwovqFqXZF_g"/>
+                </transition>
                 <transition xmi:type="uml:Transition" xmi:id="_U_VcYEVdEfGC-47AcKBwNA" source="_ORaL0EVdEfGC-47AcKBwNA" target="_vCPW4EVYEfGC-47AcKBwNA"/>
                 <transition xmi:type="uml:Transition" xmi:id="_XZ8doEVdEfGC-47AcKBwNA" source="_ORaL0EVdEfGC-47AcKBwNA" target="_kzHbAEVZEfGC-47AcKBwNA"/>
                 <transition xmi:type="uml:Transition" xmi:id="_ttO5gEVdEfGC-47AcKBwNA" source="_s8we0EVdEfGC-47AcKBwNA" target="_X4CruUVZEfGC-47AcKBwNA"/>
                 <subvertex xmi:type="uml:State" xmi:id="_X4CruUVZEfGC-47AcKBwNA" name="SideClearance"/>
-                <subvertex xmi:type="uml:State" xmi:id="_kzHbAEVZEfGC-47AcKBwNA" name="SideStop"/>
+                <subvertex xmi:type="uml:State" xmi:id="_kzHbAEVZEfGC-47AcKBwNA" name="SideStopping"/>
                 <subvertex xmi:type="uml:Pseudostate" xmi:id="_ORaL0EVdEfGC-47AcKBwNA" kind="fork"/>
                 <subvertex xmi:type="uml:Pseudostate" xmi:id="_s8we0EVdEfGC-47AcKBwNA" name="Initial7"/>
               </region>
@@ -81,10 +87,14 @@
           </region>
           <region xmi:type="uml:Region" xmi:id="_Awok4EVREfGC-47AcKBwNA" name="Region3_Railway">
             <transition xmi:type="uml:Transition" xmi:id="_gXYkoEVbEfGC-47AcKBwNA" source="_yEAM0EVaEfGC-47AcKBwNA" target="_N48TYEVbEfGC-47AcKBwNA"/>
-            <transition xmi:type="uml:Transition" xmi:id="_hSDdIEVbEfGC-47AcKBwNA" source="_5upZwEVZEfGC-47AcKBwNA" target="_yEAM0EVaEfGC-47AcKBwNA"/>
+            <transition xmi:type="uml:Transition" xmi:id="_hSDdIEVbEfGC-47AcKBwNA" source="_5upZwEVZEfGC-47AcKBwNA" target="_yEAM0EVaEfGC-47AcKBwNA">
+              <trigger xmi:type="uml:Trigger" xmi:id="_YVvPIEVrEfGwovqFqXZF_g" event="_YLnCwEVrEfGwovqFqXZF_g"/>
+            </transition>
             <transition xmi:type="uml:Transition" xmi:id="_itzCYEVbEfGC-47AcKBwNA" source="_N48TYEVbEfGC-47AcKBwNA" target="_8LE_8EVZEfGC-47AcKBwNA"/>
             <transition xmi:type="uml:Transition" xmi:id="_yXO1YEVbEfGC-47AcKBwNA" source="_N48TYEVbEfGC-47AcKBwNA" target="_Pf24wEVZEfGC-47AcKBwNA"/>
-            <transition xmi:type="uml:Transition" xmi:id="_wGbwEEVeEfGC-47AcKBwNA" source="_G-A-EEVaEfGC-47AcKBwNA" target="_5upZwEVZEfGC-47AcKBwNA"/>
+            <transition xmi:type="uml:Transition" xmi:id="_wGbwEEVeEfGC-47AcKBwNA" source="_G-A-EEVaEfGC-47AcKBwNA" target="_5upZwEVZEfGC-47AcKBwNA">
+              <trigger xmi:type="uml:Trigger" xmi:id="_uVvQsEVtEfGwovqFqXZF_g" event="_uMsCYEVtEfGwovqFqXZF_g"/>
+            </transition>
             <transition xmi:type="uml:Transition" xmi:id="_S6e90EVfEfGC-47AcKBwNA" source="_5upZwEVZEfGC-47AcKBwNA" target="_Dvh2kEVfEfGC-47AcKBwNA"/>
             <transition xmi:type="uml:Transition" xmi:id="_-0SZsEVgEfGC-47AcKBwNA" source="_5upZwEVZEfGC-47AcKBwNA" target="_JAsDoEVeEfGC-47AcKBwNA"/>
             <subvertex xmi:type="uml:State" xmi:id="_5upZwEVZEfGC-47AcKBwNA" name="TrainNone"/>
@@ -92,7 +102,9 @@
             <subvertex xmi:type="uml:Pseudostate" xmi:id="_N48TYEVbEfGC-47AcKBwNA" kind="fork"/>
             <subvertex xmi:type="uml:State" xmi:id="_3vmrcEVfEfGC-47AcKBwNA" name="TrainPassing">
               <region xmi:type="uml:Region" xmi:id="_8OdcYkVfEfGC-47AcKBwNA" name="Region1">
-                <transition xmi:type="uml:Transition" xmi:id="_qWubQEVeEfGC-47AcKBwNA" source="_8LE_8EVZEfGC-47AcKBwNA" target="_G-A-EEVaEfGC-47AcKBwNA"/>
+                <transition xmi:type="uml:Transition" xmi:id="_qWubQEVeEfGC-47AcKBwNA" source="_8LE_8EVZEfGC-47AcKBwNA" target="_G-A-EEVaEfGC-47AcKBwNA">
+                  <trigger xmi:type="uml:Trigger" xmi:id="_gunloEVrEfGwovqFqXZF_g" event="_gkNFYEVrEfGwovqFqXZF_g"/>
+                </transition>
                 <subvertex xmi:type="uml:State" xmi:id="_8LE_8EVZEfGC-47AcKBwNA" name="TrainComing"/>
                 <subvertex xmi:type="uml:State" xmi:id="_G-A-EEVaEfGC-47AcKBwNA" name="TrainBarriering"/>
               </region>
@@ -103,6 +115,12 @@
       <packagedElement xmi:type="uml:SignalEvent" xmi:id="_lXavAEVmEfGC-47AcKBwNA" name="eMainClearanceTimeout"/>
       <packagedElement xmi:type="uml:SignalEvent" xmi:id="_rj3qMEVmEfGC-47AcKBwNA" name="eMainGreenTimeout"/>
       <packagedElement xmi:type="uml:SignalEvent" xmi:id="_UwKMYEVnEfGC-47AcKBwNA" name="eMainYellowTimout"/>
+      <packagedElement xmi:type="uml:SignalEvent" xmi:id="_8YZscEVoEfGC-47AcKBwNA" name="eSideGreenTimeout"/>
+      <packagedElement xmi:type="uml:SignalEvent" xmi:id="_rMM0QEVqEfGwovqFqXZF_g" name="eSideYellowTimeout"/>
+      <packagedElement xmi:type="uml:SignalEvent" xmi:id="_Q0MJQEVrEfGwovqFqXZF_g" name="eSideClearanceTimeout"/>
+      <packagedElement xmi:type="uml:SignalEvent" xmi:id="_YLnCwEVrEfGwovqFqXZF_g" name="eTrainDetected"/>
+      <packagedElement xmi:type="uml:SignalEvent" xmi:id="_gkNFYEVrEfGwovqFqXZF_g" name="eTrainWarningTimeout"/>
+      <packagedElement xmi:type="uml:SignalEvent" xmi:id="_uMsCYEVtEfGwovqFqXZF_g" name="eTrainPassed"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_LecFAEVJEfGC-47AcKBwNA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Lekn4EVJEfGC-47AcKBwNA" source="http://www.eclipse.org/uml2/2.0.0/UML">
